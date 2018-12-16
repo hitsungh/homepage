@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Model Predictive Control"
-author: sal
+permalink: /research/MPC
+author: Guhao Sun
 categories: [ Jekyll, tutorial ]
 <!--image: assets/images/5.jpg-->
 ---
-This is for test
+Model Predictive Control (MPC) is good.
