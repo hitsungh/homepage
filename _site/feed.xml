@@ -5,9 +5,39 @@
     <description>This is a big step!</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Dec 2018 01:27:11 +0800</pubDate>
-    <lastBuildDate>Mon, 17 Dec 2018 01:27:11 +0800</lastBuildDate>
+    <pubDate>Mon, 17 Dec 2018 11:36:57 +0800</pubDate>
+    <lastBuildDate>Mon, 17 Dec 2018 11:36:57 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>switched system basic</title>
+        <description>&lt;p&gt;This is basic concepts of switched system&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Dec 2018 00:00:00 +0800</pubDate>
+        <link>/note/switched-system-basic</link>
+        <guid isPermaLink="true">/note/switched-system-basic</guid>
+        
+        
+        <category>note</category>
+        
+        <category>switched system</category>
+        
+      </item>
+    
+      <item>
+        <title>Game Theory Basic</title>
+        <description>&lt;p&gt;This is basic concepts of Game Theory.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 17 Dec 2018 00:00:00 +0800</pubDate>
+        <link>/note/game-theory-basic</link>
+        <guid isPermaLink="true">/note/game-theory-basic</guid>
+        
+        
+        <category>note</category>
+        
+        <category>game theory</category>
+        
+      </item>
     
       <item>
         <title>We all wait for summer</title>
