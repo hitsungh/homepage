@@ -5,3 +5,6 @@ permalink: /note/switched-system-basic
 categories: [ note , switched system]
 ---
 This is basic concepts of switched system
+`\[
+A x = b
+\]`

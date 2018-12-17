@@ -16,7 +16,30 @@
     
   
     
+<!-- ================ MathJax============================
+-->
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+        }
+    });
+
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>      
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
     
 </head>
     
@@ -41,7 +64,7 @@
         <!-- End Logo -->
 
         <!-- Begin Menu -->
-        <div class="collapse navbar-collapse" id="navbarsWow">
+<div class="collapse navbar-collapse" id="navbarsWow">
             
             <!-- Begin Menu -->
             <ul class="navbar-nav ml-auto">
@@ -63,6 +86,7 @@
                     <div class="dropdown-menu" aria-labelledby="dropdown01">
                     <a class="dropdown-item" href="/note/switched-system-basic">Switched system basic</a>
                     <a class="dropdown-item" href="/note/game-theory-basic">Game theory</a>
+                    <a class="dropdown-item" href="/note/mathjax">MathJax</a>
                     </div>
                 </li>
                 
@@ -73,8 +97,6 @@
                 <li class="nav-item">                
                     <a class="nav-link" href="/contact">Contact</a>
                 </li> 
-                                
-
                 
                 
             </ul>
@@ -129,6 +151,7 @@
             <h5><span>Note</span></h5>
             <ul style="list-none;">
             <li><a target="_top" href="/note/switched-system-basic">Switched System Basic</a></li>
+            <li><a target="_top" href="/note/mathjax">MathJax</a></li>
             </ul>
         </div>
             
@@ -156,6 +179,9 @@
     <div class="card-block">
         <h2 class="card-title"><a href="/note/switched-system-basic">switched system basic</a></h2>
         <h4 class="card-text">This is basic concepts of switched system
+\[
+A x = b
+\]
 </h4>
         <div class="metafooter">
             <div class="wrapfooter">
@@ -163,6 +189,35 @@
                 <span class="post-date">17 Dec 2018</span>
                 </span>
                 <span class="post-read-more"><a href="/note/switched-system-basic" title="Read Story"><i class="fa fa-link"></i></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+            
+
+            <!-- begin post -->
+
+
+<div class="col-md-6 grid-item">
+<div class="card">
+    <a href="/note/mathjax">
+        
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="/note/mathjax">利用 MathJax 在 Jekyll 网页中插入 Tex/LaTex 数学公式</a></h2>
+        <h4 class="card-text">文章转载自向日葵花。
+
+</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                
+                <span class="post-date">17 Dec 2018</span>
+                </span>
+                <span class="post-read-more"><a href="/note/mathjax" title="Read Story"><i class="fa fa-link"></i></a></span>
                 <div class="clearfix"></div>
             </div>
         </div>
