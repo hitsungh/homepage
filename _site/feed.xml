@@ -3,10 +3,10 @@
   <channel>
     <title></title>
     <description>This is a big step!</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 17 Dec 2018 13:19:52 +0800</pubDate>
-    <lastBuildDate>Mon, 17 Dec 2018 13:19:52 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 23 Dec 2018 19:57:31 +0800</pubDate>
+    <lastBuildDate>Sun, 23 Dec 2018 19:57:31 +0800</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -17,8 +17,8 @@ A x = b
 \]&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Dec 2018 00:00:00 +0800</pubDate>
-        <link>/note/switched-system-basic</link>
-        <guid isPermaLink="true">/note/switched-system-basic</guid>
+        <link>http://localhost:4000/note/switched-system-basic</link>
+        <guid isPermaLink="true">http://localhost:4000/note/switched-system-basic</guid>
         
         
         <category>note</category>
@@ -36,7 +36,7 @@ A x = b
 &lt;p&gt;但是，在 Jekyll 中使用 MathJax 时会出现严重问题，原因在于一些 LaTex 公式通常被作为 Markdown 标记处理从而影响公式的正常输出显示，因此需要一些特殊的配置。&lt;/p&gt;
 
 &lt;h3 id=&quot;配置并链接-mathjax-库&quot;&gt;配置并链接 MathJax 库&lt;/h3&gt;
-&lt;p&gt;在&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;&amp;gt;标签内添加如下代码：&lt;/p&gt;
+&lt;p&gt;在&lt;code&gt;default&lt;/code&gt;（模版）的&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;&amp;gt;标签内添加如下代码：&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script type=&quot;text/x-mathjax-config&quot;&amp;gt;
     MathJax.Hub.Config({
@@ -54,6 +54,12 @@ A x = b
 &amp;lt;/script&amp;gt;      
 &amp;lt;script type=&quot;text/javascript&quot; src=&quot;http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&quot;&amp;gt; &amp;lt;/script&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;注意，上述代码在最近的Github渲染失败，需要替换为&lt;/p&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async&amp;gt;&amp;lt;/script&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;数学公式都添加了&lt;code&gt;has-jax&lt;/code&gt;类，从而可利用 CSS 对公式进行样式控制，在&lt;code&gt;theme.css&lt;/code&gt;文件中添加以下内容，根据需要可自行修改：&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;code.has-jax {
@@ -188,8 +194,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 &lt;/ul&gt;
 </description>
         <pubDate>Mon, 17 Dec 2018 00:00:00 +0800</pubDate>
-        <link>/note/mathjax</link>
-        <guid isPermaLink="true">/note/mathjax</guid>
+        <link>http://localhost:4000/note/mathjax</link>
+        <guid isPermaLink="true">http://localhost:4000/note/mathjax</guid>
         
         
         <category>note</category>
@@ -203,8 +209,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
         <description>&lt;p&gt;This is basic concepts of Game Theory.&lt;/p&gt;
 </description>
         <pubDate>Mon, 17 Dec 2018 00:00:00 +0800</pubDate>
-        <link>/note/game-theory-basic</link>
-        <guid isPermaLink="true">/note/game-theory-basic</guid>
+        <link>http://localhost:4000/note/game-theory-basic</link>
+        <guid isPermaLink="true">http://localhost:4000/note/game-theory-basic</guid>
         
         
         <category>note</category>
@@ -220,8 +226,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 &lt;p&gt;It seems to me that education has a two-fold function to perform in the life of man and in society: the one is utility and the other is culture. Education must enable a man to become more efficient, to achieve with increasing facility the ligitimate goals of his life.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0800</pubDate>
-        <link>/jekyll/tutorial/2018/01/12/we-all-wait-for-summer.html</link>
-        <guid isPermaLink="true">/jekyll/tutorial/2018/01/12/we-all-wait-for-summer.html</guid>
+        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/we-all-wait-for-summer.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/we-all-wait-for-summer.html</guid>
         
         
         <category>Jekyll</category>
@@ -246,8 +252,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0800</pubDate>
-        <link>/jekyll/tutorial/2018/01/12/tree-of-codes.html</link>
-        <guid isPermaLink="true">/jekyll/tutorial/2018/01/12/tree-of-codes.html</guid>
+        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/tree-of-codes.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/tree-of-codes.html</guid>
         
         
         <category>Jekyll</category>
@@ -271,8 +277,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 &lt;p&gt;As for this particular rendition of Charles Perrault’s classic tale, the text and design is by Lydia Very (1823-1901), sister of Transcendentalist poet Jones Very. The gruesome ending of the original — which sees Little Red Riding Hood being gobbled up as well as her grandmother — is avoided here, the gore giving way to the less bloody aims of the morality tale, and the lesson that one should not disobey one’s mother.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0800</pubDate>
-        <link>/jekyll/tutorial/2018/01/12/red-riding.html</link>
-        <guid isPermaLink="true">/jekyll/tutorial/2018/01/12/red-riding.html</guid>
+        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/red-riding.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/red-riding.html</guid>
         
         
         <category>Jekyll</category>
@@ -325,8 +331,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 &lt;p&gt;&lt;iframe style=&quot;width:100%;&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/Cniqsc9QfDo?rel=0&amp;amp;showinfo=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0800</pubDate>
-        <link>/jekyll/tutorial/2018/01/12/powerful-things-markdown-editor.html</link>
-        <guid isPermaLink="true">/jekyll/tutorial/2018/01/12/powerful-things-markdown-editor.html</guid>
+        <link>http://localhost:4000/jekyll/tutorial/2018/01/12/powerful-things-markdown-editor.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/12/powerful-things-markdown-editor.html</guid>
         
         
         <category>Jekyll</category>
@@ -340,8 +346,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
         <description>&lt;p&gt;Model Predictive Control (MPC) is good.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Jan 2018 00:00:00 +0800</pubDate>
-        <link>/research/MPC</link>
-        <guid isPermaLink="true">/research/MPC</guid>
+        <link>http://localhost:4000/research/MPC</link>
+        <guid isPermaLink="true">http://localhost:4000/research/MPC</guid>
         
         
         <category>Jekyll</category>
@@ -368,8 +374,8 @@ P(E)   = {n \choose k} p^k (1-p)^{ n-k}
 
 </description>
         <pubDate>Thu, 11 Jan 2018 00:00:00 +0800</pubDate>
-        <link>/jekyll/tutorial/2018/01/11/markup-example.html</link>
-        <guid isPermaLink="true">/jekyll/tutorial/2018/01/11/markup-example.html</guid>
+        <link>http://localhost:4000/jekyll/tutorial/2018/01/11/markup-example.html</link>
+        <guid isPermaLink="true">http://localhost:4000/jekyll/tutorial/2018/01/11/markup-example.html</guid>
         
         
         <category>Jekyll</category>

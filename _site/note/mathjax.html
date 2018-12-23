@@ -33,8 +33,11 @@
         }
     });
 </script>      
+<!--
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-
+-->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+<!-- ======   AutoNumber ====== -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     TeX: { equationNumbers: { autoNumber: "AMS" } }
@@ -175,7 +178,7 @@ MathJax.Hub.Config({
 <p>但是，在 Jekyll 中使用 MathJax 时会出现严重问题，原因在于一些 LaTex 公式通常被作为 Markdown 标记处理从而影响公式的正常输出显示，因此需要一些特殊的配置。</p>
 
 <h3 id="配置并链接-mathjax-库">配置并链接 MathJax 库</h3>
-<p>在<code>&lt;head&gt;</code>&gt;标签内添加如下代码：</p>
+<p>在<code>default</code>（模版）的<code>&lt;head&gt;</code>&gt;标签内添加如下代码：</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script type="text/x-mathjax-config"&gt;
     MathJax.Hub.Config({
@@ -193,6 +196,12 @@ MathJax.Hub.Config({
 &lt;/script&gt;      
 &lt;script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"&gt; &lt;/script&gt;
 </code></pre></div></div>
+
+<blockquote>
+  <p>注意，上述代码在最近的Github渲染失败，需要替换为</p>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async&gt;&lt;/script&gt;
+</code></pre></div>  </div>
+</blockquote>
 
 <p>数学公式都添加了<code>has-jax</code>类，从而可利用 CSS 对公式进行样式控制，在<code>theme.css</code>文件中添加以下内容，根据需要可自行修改：</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code.has-jax {
